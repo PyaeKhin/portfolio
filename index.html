@@ -354,25 +354,34 @@
 
                 <p><strong>Location:</strong> Yangon, Myanmar</p>
 
-                <p><strong>GitHub:</strong> github.com/yourusername</p>
+                <p><strong>GitHub:</strong> https://github.com/PyaeKhin</p>
 
-                <p><strong>LinkedIn:</strong> linkedin.com/in/yourusername</p>
+                <p><strong>LinkedIn:</strong> linkedin.com/in/Pyae Khin</p>
 
             </div>
 
-            <form class="contact-form">
+            <form action="https://formsubmit.co/pyaekhindev32@gmail.com" method="POST" class="contact-form">
 
-                <input type="text" placeholder="Your Name">
+    <!-- Redirect back to your portfolio after sending -->
+    <input type="hidden" name="_next" value="https://pyaekhin.github.io/portfolio/">
 
-                <input type="email" placeholder="Your Email">
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
 
-                <textarea rows="6" placeholder="Your Message"></textarea>
+    <!-- Email subject -->
+    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
 
-                <button class="btn">
-                    Send Message
-                </button>
+    <input type="text" name="name" placeholder="Your Name" required>
 
-            </form>
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn">
+        Send Message
+    </button>
+
+</form>
 
         </div>
 
