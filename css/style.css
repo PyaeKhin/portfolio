@@ -399,16 +399,6 @@ section{
    EXPERIENCE
 ========================== */
 
-.experience-card{
-
-    background:#1e293b;
-    padding:40px;
-    border-radius:20px;
-    max-width:900px;
-    margin:auto;
-
-}
-
 .experience-card h3{
 
     color:#38bdf8;
@@ -724,4 +714,32 @@ color:#94a3b8;
 .experience-card li{
     margin-bottom:10px;
     line-height:1.6;
+}
+
+/*============Experience  Responsive
+=====================*/
+@media (max-width:768px){
+
+    .timeline::before{
+        left:20px;
+    }
+
+    .timeline-item{
+        flex-direction:column;
+        padding-left:50px;
+    }
+
+    .timeline-item::before{
+        left:14px;
+    }
+
+    .timeline-date{
+        width:auto;
+        text-align:left;
+        margin-bottom:10px;
+    }
+
+    .experience-card{
+        width:100%;
+    }
 }
